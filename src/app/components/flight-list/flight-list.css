@@ -158,3 +158,103 @@ td {
     padding: 11px 10px;
   }
 }
+
+/* Dark mode */
+
+:host-context(.dark-mode) .flight-list-section {
+  background: #172033;
+  color: #ffffff;
+  border-color: #2d3a50;
+}
+
+:host-context(.dark-mode) .section-heading h3 {
+  color: #ffffff;
+}
+
+:host-context(.dark-mode) .section-heading p {
+  color: #aeb9ca;
+}
+
+:host-context(.dark-mode) table {
+  color: #ffffff;
+}
+
+:host-context(.dark-mode) thead {
+  background: #202b3d;
+}
+
+:host-context(.dark-mode) th {
+  color: #dbe3ef;
+  border-color: #2d3a50;
+}
+
+:host-context(.dark-mode) td {
+  color: #ffffff;
+  border-color: #2d3a50;
+}
+
+:host-context(.dark-mode) .flight-row:hover {
+  background: #202b3d;
+}
+
+:host-context(.dark-mode) .flight-row.selected {
+  background: #263652;
+}
+
+:host-context(.dark-mode) .no-results {
+  color: #aeb9ca;
+}
+
+:host-context(.dark-mode) .flight-row:focus {
+  outline: 2px solid #4f8cff;
+  outline-offset: -2px;
+}
+
+/* Dark mode - table header fix */
+
+:host-context(.dark-mode) .flight-list-section {
+  background: #172033;
+  color: #ffffff;
+}
+
+:host-context(.dark-mode) .flight-list-section .section-heading h3 {
+  color: #ffffff;
+}
+
+:host-context(.dark-mode) .flight-list-section .section-heading p {
+  color: #aeb9ca;
+}
+
+:host-context(.dark-mode) .flight-list-section table {
+  background: #172033;
+  color: #ffffff;
+}
+
+:host-context(.dark-mode) .flight-list-section thead {
+  background: #263449 !important;
+}
+
+:host-context(.dark-mode) .flight-list-section th {
+  background: #263449 !important;
+  color: #ffffff !important;
+  border-color: #344258;
+}
+
+:host-context(.dark-mode) .flight-list-section td {
+  background: #172033;
+  color: #ffffff;
+  border-color: #2d3a50;
+}
+
+:host-context(.dark-mode) .flight-list-section .flight-row:hover td {
+  background: #202b3d;
+}
+
+:host-context(.dark-mode) .flight-list-section .flight-row.selected td {
+  background: #263652;
+}
+
+:host-context(.dark-mode) .flight-list-section .no-results {
+  color: #aeb9ca;
+  background: #172033;
+}

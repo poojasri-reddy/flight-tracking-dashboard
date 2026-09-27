@@ -1,0 +1,109 @@
+:host {
+  display: block;
+  width: 100%;
+  min-width: 0;
+}
+
+.map-container {
+  width: 100%;
+  height: 440px;
+  min-height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Flight marker */
+
+.flight-marker {
+  background: transparent;
+  border: none;
+}
+
+.flight-marker-icon {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #175cd3;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 700;
+
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.35);
+
+  cursor: pointer;
+}
+
+.flight-marker-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Popup */
+
+.flight-popup {
+  min-width: 150px;
+  max-width: 240px;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  line-height: 1.6;
+}
+
+.flight-popup strong {
+  font-size: 15px;
+}
+
+/* Large tablet */
+
+@media (max-width: 900px) {
+
+  .map-container {
+    height: 500px;
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 700px) {
+
+  .map-container {
+    height: 450px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+
+  .map-container {
+    height: 400px;
+    min-height: 350px;
+  }
+}
+
+/* Small mobile */
+
+@media (max-width: 360px) {
+
+  .map-container {
+    height: 340px;
+    min-height: 300px;
+  }
+
+  .flight-marker-icon {
+    width: 32px;
+    height: 32px;
+
+    font-size: 15px;
+  }
+}

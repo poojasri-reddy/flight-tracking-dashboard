@@ -1,0 +1,132 @@
+<section class="flight-list-section">
+
+  <div class="section-heading">
+
+    <div>
+
+      <h3>
+        Flights
+      </h3>
+
+      <p>
+        Showing {{ flights.length }} flights
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <div class="table-wrapper">
+
+    <table>
+
+      <thead>
+
+        <tr>
+
+          <th>
+            Flight
+          </th>
+
+          <th>
+            Callsign
+          </th>
+
+          <th>
+            Aircraft
+          </th>
+
+          <th>
+            Origin
+          </th>
+
+          <th>
+            Destination
+          </th>
+
+          <th>
+            Status
+          </th>
+
+        </tr>
+
+      </thead>
+
+
+      <tbody>
+
+        @for (flight of flights; track flight.id) {
+
+          <tr
+            class="flight-row"
+            [class.selected]="
+              selectedFlight?.id === flight.id
+            "
+            tabindex="0"
+            (click)="selectFlight(flight)"
+            (keydown.enter)="selectFlight(flight)">
+
+            <td>
+              {{ flight.flightNumber }}
+            </td>
+
+            <td>
+              {{ flight.callsign }}
+            </td>
+
+            <td>
+              {{ flight.aircraftType }}
+            </td>
+
+            <td>
+              {{ flight.origin }}
+            </td>
+
+            <td>
+              {{ flight.destination }}
+            </td>
+
+            <td>
+
+              <span
+                class="status-badge"
+                [class.active]="flight.status === 'Active'"
+                [class.delayed]="flight.status === 'Delayed'"
+                [class.arrived]="flight.status === 'Arrived'"
+                [class.scheduled]="flight.status === 'Scheduled'">
+
+                {{ flight.status }}
+
+              </span>
+
+            </td>
+
+          </tr>
+
+        }
+
+
+        @if (flights.length === 0) {
+
+          <tr>
+
+            <td
+              colspan="6"
+              class="no-results">
+
+              No flights match the selected filters.
+
+            </td>
+
+          </tr>
+
+        }
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+</section>

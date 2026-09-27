@@ -1,0 +1,309 @@
+<div
+  class="dashboard"
+  [class.dark-mode]="isDarkMode">
+
+  <!-- Header -->
+  <header class="dashboard-header">
+
+    <div>
+      <h1>✈ Flight Tracking &amp; Operations</h1>
+
+      <p>
+        Real-time flight monitoring and operations
+      </p>
+    </div>
+
+    <button
+      class="theme-button"
+      type="button"
+      (click)="toggleDarkMode()">
+
+      {{ isDarkMode ? '☀ Light' : '☾ Dark' }}
+
+    </button>
+
+  </header>
+
+
+  <!-- Page Heading -->
+  <section class="page-heading">
+
+    <h2>Operations Dashboard</h2>
+
+    <p>
+      Monitor flight activity, routes and operational status.
+    </p>
+
+  </section>
+
+
+  <!-- KPI Cards -->
+  <section class="kpi-grid">
+
+    <div class="kpi-card">
+
+      <div>
+        <span class="kpi-label">
+          Total Flights
+        </span>
+
+        <strong>
+          {{ totalFlights }}
+        </strong>
+      </div>
+
+      <span class="kpi-icon">
+        ✈
+      </span>
+
+    </div>
+
+
+    <div class="kpi-card">
+
+      <div>
+        <span class="kpi-label">
+          Active Flights
+        </span>
+
+        <strong>
+          {{ activeFlights }}
+        </strong>
+      </div>
+
+      <span class="kpi-icon">
+        ●
+      </span>
+
+    </div>
+
+
+    <div class="kpi-card">
+
+      <div>
+        <span class="kpi-label">
+          Delayed Flights
+        </span>
+
+        <strong>
+          {{ delayedFlights }}
+        </strong>
+      </div>
+
+      <span class="kpi-icon">
+        !
+      </span>
+
+    </div>
+
+
+    <div class="kpi-card">
+
+      <div>
+        <span class="kpi-label">
+          Arrived Flights
+        </span>
+
+        <strong>
+          {{ arrivedFlights }}
+        </strong>
+      </div>
+
+      <span class="kpi-icon">
+        ✓
+      </span>
+
+    </div>
+
+  </section>
+
+
+  <!-- Search and Filters -->
+  <section class="filter-section">
+
+    <div class="filter-header">
+
+      <h3>Search &amp; Filters</h3>
+
+      <p>
+        Find flights by callsign, status or airport.
+      </p>
+
+    </div>
+
+
+    <form
+      class="filter-grid"
+      [formGroup]="filterForm">
+
+      <!-- Callsign -->
+      <div class="filter-field">
+
+        <label for="callsign">
+          Search Callsign
+        </label>
+
+        <input
+          id="callsign"
+          type="text"
+          formControlName="callsign"
+          placeholder="e.g. AIC101"
+        />
+
+      </div>
+
+
+      <!-- Status -->
+      <div class="filter-field">
+
+        <label for="status">
+          Status
+        </label>
+
+        <select
+          id="status"
+          formControlName="status">
+
+          <option value="">
+            All Statuses
+          </option>
+
+          <option value="Active">
+            Active
+          </option>
+
+          <option value="Delayed">
+            Delayed
+          </option>
+
+          <option value="Arrived">
+            Arrived
+          </option>
+
+          <option value="Scheduled">
+            Scheduled
+          </option>
+
+        </select>
+
+      </div>
+
+
+      <!-- Origin -->
+      <div class="filter-field">
+
+        <label for="origin">
+          Origin Airport
+        </label>
+
+        <select
+          id="origin"
+          formControlName="origin">
+
+          <option value="">
+            All Origins
+          </option>
+
+          <option value="DEL">DEL</option>
+          <option value="HYD">HYD</option>
+          <option value="BOM">BOM</option>
+          <option value="BLR">BLR</option>
+          <option value="MAA">MAA</option>
+          <option value="CCU">CCU</option>
+          <option value="GOI">GOI</option>
+
+        </select>
+
+      </div>
+
+
+      <!-- Destination -->
+      <div class="filter-field">
+
+        <label for="destination">
+          Destination Airport
+        </label>
+
+        <select
+          id="destination"
+          formControlName="destination">
+
+          <option value="">
+            All Destinations
+          </option>
+
+          <option value="DEL">DEL</option>
+          <option value="HYD">HYD</option>
+          <option value="BOM">BOM</option>
+          <option value="BLR">BLR</option>
+          <option value="MAA">MAA</option>
+          <option value="CCU">CCU</option>
+          <option value="GOI">GOI</option>
+
+        </select>
+
+      </div>
+
+
+      <!-- Reset -->
+      <button
+        class="reset-button"
+        type="button"
+        (click)="resetFilters()">
+
+        Reset Filters
+
+      </button>
+
+    </form>
+
+  </section>
+
+
+  <!-- Map + Details -->
+  <section class="operations-layout">
+
+    <!-- Map -->
+    <div class="map-container">
+
+      <div class="section-heading">
+
+        <div>
+
+          <h3>
+            Live Flight Map
+          </h3>
+
+          <p>
+            Click a flight marker to view details.
+          </p>
+
+        </div>
+
+      </div>
+
+      <app-flight-map
+        [flights]="filteredFlights"
+        [selectedFlight]="selectedFlight"
+        (flightSelected)="selectFlight($event)">
+      </app-flight-map>
+
+    </div>
+
+
+    <!-- Flight Details -->
+    <app-flight-details
+      [flight]="selectedFlight">
+    </app-flight-details>
+
+  </section>
+
+
+  <!-- Flight List -->
+  <app-flight-list
+    [flights]="filteredFlights"
+    [selectedFlight]="selectedFlight"
+    (flightSelected)="selectFlight($event)">
+  </app-flight-list>
+
+</div>

@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "flightNumber": "AI101",
+    "callsign": "AIC101",
+    "aircraftType": "Boeing 787",
+    "origin": "DEL",
+    "originName": "Indira Gandhi International Airport",
+    "destination": "BOM",
+    "destinationName": "Chhatrapati Shivaji Maharaj International Airport",
+    "status": "Active",
+    "departureTime": "08:30",
+    "arrivalTime": "10:45",
+    "currentPosition": {
+      "lat": 21.5,
+      "lng": 77.2
+    },
+    "originPosition": {
+      "lat": 28.5562,
+      "lng": 77.1
+    },
+    "destinationPosition": {
+      "lat": 19.0896,
+      "lng": 72.8656
+    }
+  },
+  {
+    "id": 2,
+    "flightNumber": "6E205",
+    "callsign": "IGO205",
+    "aircraftType": "Airbus A320",
+    "origin": "HYD",
+    "originName": "Rajiv Gandhi International Airport",
+    "destination": "BLR",
+    "destinationName": "Kempegowda International Airport",
+    "status": "Delayed",
+    "departureTime": "09:15",
+    "arrivalTime": "10:30",
+    "currentPosition": {
+      "lat": 14.8,
+      "lng": 78.0
+    },
+    "originPosition": {
+      "lat": 17.2403,
+      "lng": 78.4294
+    },
+    "destinationPosition": {
+      "lat": 13.1986,
+      "lng": 77.7066
+    }
+  },
+  {
+    "id": 3,
+    "flightNumber": "6E401",
+    "callsign": "IGO401",
+    "aircraftType": "Airbus A321",
+    "origin": "MAA",
+    "originName": "Chennai International Airport",
+    "destination": "DEL",
+    "destinationName": "Indira Gandhi International Airport",
+    "status": "Active",
+    "departureTime": "07:45",
+    "arrivalTime": "10:35",
+    "currentPosition": {
+      "lat": 17.8,
+      "lng": 79.5
+    },
+    "originPosition": {
+      "lat": 12.9941,
+      "lng": 80.1709
+    },
+    "destinationPosition": {
+      "lat": 28.5562,
+      "lng": 77.1
+    }
+  },
+  {
+    "id": 4,
+    "flightNumber": "AI502",
+    "callsign": "AIC502",
+    "aircraftType": "Airbus A320",
+    "origin": "BOM",
+    "originName": "Chhatrapati Shivaji Maharaj International Airport",
+    "destination": "GOI",
+    "destinationName": "Goa International Airport",
+    "status": "Arrived",
+    "departureTime": "06:20",
+    "arrivalTime": "07:30",
+    "currentPosition": {
+      "lat": 15.3808,
+      "lng": 73.8314
+    },
+    "originPosition": {
+      "lat": 19.0896,
+      "lng": 72.8656
+    },
+    "destinationPosition": {
+      "lat": 15.3808,
+      "lng": 73.8314
+    }
+  },
+  {
+    "id": 5,
+    "flightNumber": "6E712",
+    "callsign": "IGO712",
+    "aircraftType": "Airbus A320",
+    "origin": "BLR",
+    "originName": "Kempegowda International Airport",
+    "destination": "HYD",
+    "destinationName": "Rajiv Gandhi International Airport",
+    "status": "Active",
+    "departureTime": "10:00",
+    "arrivalTime": "11:10",
+    "currentPosition": {
+      "lat": 15.2,
+      "lng": 78.0
+    },
+    "originPosition": {
+      "lat": 13.1986,
+      "lng": 77.7066
+    },
+    "destinationPosition": {
+      "lat": 17.2403,
+      "lng": 78.4294
+    }
+  },
+  {
+    "id": 6,
+    "flightNumber": "AI304",
+    "callsign": "AIC304",
+    "aircraftType": "Boeing 737",
+    "origin": "CCU",
+    "originName": "Netaji Subhas Chandra Bose International Airport",
+    "destination": "DEL",
+    "destinationName": "Indira Gandhi International Airport",
+    "status": "Scheduled",
+    "departureTime": "11:30",
+    "arrivalTime": "13:45",
+    "currentPosition": {
+      "lat": 22.8,
+      "lng": 84.0
+    },
+    "originPosition": {
+      "lat": 22.6547,
+      "lng": 88.4467
+    },
+    "destinationPosition": {
+      "lat": 28.5562,
+      "lng": 77.1
+    }
+  },
+  {
+    "id": 7,
+    "flightNumber": "6E810",
+    "callsign": "IGO810",
+    "aircraftType": "Airbus A321",
+    "origin": "DEL",
+    "originName": "Indira Gandhi International Airport",
+    "destination": "HYD",
+    "destinationName": "Rajiv Gandhi International Airport",
+    "status": "Delayed",
+    "departureTime": "09:45",
+    "arrivalTime": "12:00",
+    "currentPosition": {
+      "lat": 24.0,
+      "lng": 78.0
+    },
+    "originPosition": {
+      "lat": 28.5562,
+      "lng": 77.1
+    },
+    "destinationPosition": {
+      "lat": 17.2403,
+      "lng": 78.4294
+    }
+  },
+  {
+    "id": 8,
+    "flightNumber": "AI611",
+    "callsign": "AIC611",
+    "aircraftType": "Airbus A320",
+    "origin": "HYD",
+    "originName": "Rajiv Gandhi International Airport",
+    "destination": "MAA",
+    "destinationName": "Chennai International Airport",
+    "status": "Active",
+    "departureTime": "10:20",
+    "arrivalTime": "11:35",
+    "currentPosition": {
+      "lat": 15.5,
+      "lng": 79.5
+    },
+    "originPosition": {
+      "lat": 17.2403,
+      "lng": 78.4294
+    },
+    "destinationPosition": {
+      "lat": 12.9941,
+      "lng": 80.1709
+    }
+  },
+  {
+    "id": 9,
+    "flightNumber": "6E921",
+    "callsign": "IGO921",
+    "aircraftType": "Airbus A320",
+    "origin": "BOM",
+    "originName": "Chhatrapati Shivaji Maharaj International Airport",
+    "destination": "DEL",
+    "destinationName": "Indira Gandhi International Airport",
+    "status": "Arrived",
+    "departureTime": "05:40",
+    "arrivalTime": "07:45",
+    "currentPosition": {
+      "lat": 28.5562,
+      "lng": 77.1
+    },
+    "originPosition": {
+      "lat": 19.0896,
+      "lng": 72.8656
+    },
+    "destinationPosition": {
+      "lat": 28.5562,
+      "lng": 77.1
+    }
+  },
+  {
+    "id": 10,
+    "flightNumber": "AI720",
+    "callsign": "AIC720",
+    "aircraftType": "Boeing 787",
+    "origin": "MAA",
+    "originName": "Chennai International Airport",
+    "destination": "BOM",
+    "destinationName": "Chhatrapati Shivaji Maharaj International Airport",
+    "status": "Scheduled",
+    "departureTime": "12:15",
+    "arrivalTime": "14:10",
+    "currentPosition": {
+      "lat": 13.8,
+      "lng": 76.5
+    },
+    "originPosition": {
+      "lat": 12.9941,
+      "lng": 80.1709
+    },
+    "destinationPosition": {
+      "lat": 19.0896,
+      "lng": 72.8656
+    }
+  },
+  {
+    "id": 11,
+    "flightNumber": "6E531",
+    "callsign": "IGO531",
+    "aircraftType": "Airbus A320",
+    "origin": "GOI",
+    "originName": "Goa International Airport",
+    "destination": "BLR",
+    "destinationName": "Kempegowda International Airport",
+    "status": "Active",
+    "departureTime": "10:40",
+    "arrivalTime": "11:35",
+    "currentPosition": {
+      "lat": 14.2,
+      "lng": 75.8
+    },
+    "originPosition": {
+      "lat": 15.3808,
+      "lng": 73.8314
+    },
+    "destinationPosition": {
+      "lat": 13.1986,
+      "lng": 77.7066
+    }
+  },
+  {
+    "id": 12,
+    "flightNumber": "AI830",
+    "callsign": "AIC830",
+    "aircraftType": "Airbus A321",
+    "origin": "BLR",
+    "originName": "Kempegowda International Airport",
+    "destination": "DEL",
+    "destinationName": "Indira Gandhi International Airport",
+    "status": "Delayed",
+    "departureTime": "08:50",
+    "arrivalTime": "11:35",
+    "currentPosition": {
+      "lat": 19.5,
+      "lng": 78.0
+    },
+    "originPosition": {
+      "lat": 13.1986,
+      "lng": 77.7066
+    },
+    "destinationPosition": {
+      "lat": 28.5562,
+      "lng": 77.1
+    }
+  },
+  {
+    "id": 13,
+    "flightNumber": "6E402",
+    "callsign": "IGO402",
+    "aircraftType": "Airbus A320",
+    "origin": "DEL",
+    "originName": "Indira Gandhi International Airport",
+    "destination": "CCU",
+    "destinationName": "Netaji Subhas Chandra Bose International Airport",
+    "status": "Scheduled",
+    "departureTime": "13:00",
+    "arrivalTime": "15:10",
+    "currentPosition": {
+      "lat": 28.0,
+      "lng": 82.0
+    },
+    "originPosition": {
+      "lat": 28.5562,
+      "lng": 77.1
+    },
+    "destinationPosition": {
+      "lat": 22.6547,
+      "lng": 88.4467
+    }
+  },
+  {
+    "id": 14,
+    "flightNumber": "AI450",
+    "callsign": "AIC450",
+    "aircraftType": "Boeing 737",
+    "origin": "CCU",
+    "originName": "Netaji Subhas Chandra Bose International Airport",
+    "destination": "BOM",
+    "destinationName": "Chhatrapati Shivaji Maharaj International Airport",
+    "status": "Active",
+    "departureTime": "09:30",
+    "arrivalTime": "12:20",
+    "currentPosition": {
+      "lat": 20.0,
+      "lng": 82.0
+    },
+    "originPosition": {
+      "lat": 22.6547,
+      "lng": 88.4467
+    },
+    "destinationPosition": {
+      "lat": 19.0896,
+      "lng": 72.8656
+    }
+  },
+  {
+    "id": 15,
+    "flightNumber": "6E650",
+    "callsign": "IGO650",
+    "aircraftType": "Airbus A320",
+    "origin": "HYD",
+    "originName": "Rajiv Gandhi International Airport",
+    "destination": "DEL",
+    "destinationName": "Indira Gandhi International Airport",
+    "status": "Arrived",
+    "departureTime": "06:10",
+    "arrivalTime": "08:30",
+    "currentPosition": {
+      "lat": 28.5562,
+      "lng": 77.1
+    },
+    "originPosition": {
+      "lat": 17.2403,
+      "lng": 78.4294
+    },
+    "destinationPosition": {
+      "lat": 28.5562,
+      "lng": 77.1
+    }
+  },
+  {
+    "id": 16,
+    "flightNumber": "AI711",
+    "callsign": "AIC711",
+    "aircraftType": "Boeing 787",
+    "origin": "BOM",
+    "originName": "Chhatrapati Shivaji Maharaj International Airport",
+    "destination": "HYD",
+    "destinationName": "Rajiv Gandhi International Airport",
+    "status": "Scheduled",
+    "departureTime": "14:00",
+    "arrivalTime": "15:30",
+    "currentPosition": {
+      "lat": 19.5,
+      "lng": 75.5
+    },
+    "originPosition": {
+      "lat": 19.0896,
+      "lng": 72.8656
+    },
+    "destinationPosition": {
+      "lat": 17.2403,
+      "lng": 78.4294
+    }
+  },
+  {
+    "id": 17,
+    "flightNumber": "6E310",
+    "callsign": "IGO310",
+    "aircraftType": "Airbus A321",
+    "origin": "MAA",
+    "originName": "Chennai International Airport",
+    "destination": "BLR",
+    "destinationName": "Kempegowda International Airport",
+    "status": "Active",
+    "departureTime": "11:10",
+    "arrivalTime": "12:00",
+    "currentPosition": {
+      "lat": 13.0,
+      "lng": 79.0
+    },
+    "originPosition": {
+      "lat": 12.9941,
+      "lng": 80.1709
+    },
+    "destinationPosition": {
+      "lat": 13.1986,
+      "lng": 77.7066
+    }
+  },
+  {
+    "id": 18,
+    "flightNumber": "AI225",
+    "callsign": "AIC225",
+    "aircraftType": "Airbus A320",
+    "origin": "BLR",
+    "originName": "Kempegowda International Airport",
+    "destination": "MAA",
+    "destinationName": "Chennai International Airport",
+    "status": "Delayed",
+    "departureTime": "10:50",
+    "arrivalTime": "11:45",
+    "currentPosition": {
+      "lat": 13.1,
+      "lng": 78.5
+    },
+    "originPosition": {
+      "lat": 13.1986,
+      "lng": 77.7066
+    },
+    "destinationPosition": {
+      "lat": 12.9941,
+      "lng": 80.1709
+    }
+  },
+  {
+    "id": 19,
+    "flightNumber": "6E730",
+    "callsign": "IGO730",
+    "aircraftType": "Airbus A320",
+    "origin": "DEL",
+    "originName": "Indira Gandhi International Airport",
+    "destination": "GOI",
+    "destinationName": "Goa International Airport",
+    "status": "Scheduled",
+    "departureTime": "15:00",
+    "arrivalTime": "17:25",
+    "currentPosition": {
+      "lat": 23.0,
+      "lng": 75.5
+    },
+    "originPosition": {
+      "lat": 28.5562,
+      "lng": 77.1
+    },
+    "destinationPosition": {
+      "lat": 15.3808,
+      "lng": 73.8314
+    }
+  },
+  {
+    "id": 20,
+    "flightNumber": "AI910",
+    "callsign": "AIC910",
+    "aircraftType": "Boeing 737",
+    "origin": "GOI",
+    "originName": "Goa International Airport",
+    "destination": "HYD",
+    "destinationName": "Rajiv Gandhi International Airport",
+    "status": "Active",
+    "departureTime": "12:30",
+    "arrivalTime": "13:45",
+    "currentPosition": {
+      "lat": 16.2,
+      "lng": 76.5
+    },
+    "originPosition": {
+      "lat": 15.3808,
+      "lng": 73.8314
+    },
+    "destinationPosition": {
+      "lat": 17.2403,
+      "lng": 78.4294
+    }
+  }
+]

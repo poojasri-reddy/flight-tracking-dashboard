@@ -1,0 +1,178 @@
+<aside class="details-panel">
+
+  <div class="section-heading">
+
+    <h3>
+      Flight Details
+    </h3>
+
+    <p>
+      Selected flight information
+    </p>
+
+  </div>
+
+
+  @if (!flight) {
+
+    <div class="empty-details">
+
+      <div class="empty-icon">
+        ✈
+      </div>
+
+      <h4>
+        Select a flight
+      </h4>
+
+      <p>
+        Select a flight from the map or flight list
+        to view its details.
+      </p>
+
+    </div>
+
+  }
+
+
+  @if (flight) {
+
+    <div class="flight-details">
+
+      <!-- Flight title -->
+      <div class="flight-title">
+
+        <div>
+
+          <span class="detail-label">
+            Flight Number
+          </span>
+
+          <h4>
+            {{ flight.flightNumber }}
+          </h4>
+
+        </div>
+
+
+        <span
+          class="status-badge"
+          [class.active]="flight.status === 'Active'"
+          [class.delayed]="flight.status === 'Delayed'"
+          [class.arrived]="flight.status === 'Arrived'"
+          [class.scheduled]="flight.status === 'Scheduled'">
+
+          {{ flight.status }}
+
+        </span>
+
+      </div>
+
+
+      <!-- Callsign -->
+      <div class="detail-item">
+
+        <span class="detail-label">
+          Callsign
+        </span>
+
+        <strong>
+          {{ flight.callsign }}
+        </strong>
+
+      </div>
+
+
+      <!-- Aircraft -->
+      <div class="detail-item">
+
+        <span class="detail-label">
+          Aircraft Type
+        </span>
+
+        <strong>
+          {{ flight.aircraftType }}
+        </strong>
+
+      </div>
+
+
+      <!-- Route -->
+      <div class="route-details">
+
+        <div class="airport-detail">
+
+          <span class="detail-label">
+            Origin
+          </span>
+
+          <strong>
+            {{ flight.origin }}
+          </strong>
+
+          <small>
+            {{ flight.originName }}
+          </small>
+
+        </div>
+
+
+        <div class="route-arrow">
+          →
+        </div>
+
+
+        <div class="airport-detail">
+
+          <span class="detail-label">
+            Destination
+          </span>
+
+          <strong>
+            {{ flight.destination }}
+          </strong>
+
+          <small>
+            {{ flight.destinationName }}
+          </small>
+
+        </div>
+
+      </div>
+
+
+      <!-- Times -->
+      <div class="time-details">
+
+        <div class="detail-item">
+
+          <span class="detail-label">
+            Estimated Departure
+          </span>
+
+          <strong>
+            {{ flight.departureTime }}
+          </strong>
+
+        </div>
+
+
+        <div class="detail-item">
+
+          <span class="detail-label">
+            Estimated Arrival
+          </span>
+
+          <strong>
+            {{ flight.arrivalTime }}
+          </strong>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  }
+
+</aside>

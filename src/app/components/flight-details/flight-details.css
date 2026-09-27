@@ -255,3 +255,51 @@
     flex-direction: column;
   }
 }
+
+/* Dark mode */
+
+:host-context(.dark-mode) .details-panel {
+  background: #172033;
+  color: #ffffff;
+  border-color: #2d3a50;
+}
+
+:host-context(.dark-mode) .section-heading h3 {
+  color: #ffffff;
+}
+
+:host-context(.dark-mode) .section-heading p {
+  color: #aeb9ca;
+}
+
+:host-context(.dark-mode) .detail-label {
+  color: #aeb9ca;
+}
+
+:host-context(.dark-mode) .detail-item strong,
+:host-context(.dark-mode) .flight-title h4,
+:host-context(.dark-mode) .airport-detail strong {
+  color: #ffffff;
+}
+
+:host-context(.dark-mode) .airport-detail small {
+  color: #aeb9ca;
+}
+
+:host-context(.dark-mode) .route-arrow {
+  color: #4f8cff;
+}
+
+:host-context(.dark-mode) .empty-details {
+  color: #ffffff;
+}
+
+:host-context(.dark-mode) .empty-details p {
+  color: #aeb9ca;
+}
+
+:host-context(.dark-mode) .time-details,
+:host-context(.dark-mode) .route-details,
+:host-context(.dark-mode) .detail-item {
+  border-color: #2d3a50;
+}
